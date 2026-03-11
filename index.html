@@ -1,158 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shilpa Portfolio</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shilpa Portfolio</title>
 
-    nav {
-     max-width: 900px;
-      margin: 2rem auto;
-      border-radius: 8px;
-      background-color: white;
-      padding: 1rem 1rem;
-      text-align: right;
-      border-bottom: 1px solid #ddd;
-    }
+<style>
 
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #333;
-      
-    }
+html{
+scroll-behavior:smooth;
+}
 
-    nav a:hover {
-      color: #007bff;
-    }
+body{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color:#f9f9f9;
+color:#333;
+margin:0;
+}
 
-    .hero {
-      width: 900px;
-      margin: auto; 
-      background-color: #fff;
-    }
+/* NAVBAR */
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
+nav{
+max-width:900px;
+margin:2rem auto;
+border-radius:8px;
+background-color:white;
+padding:1rem;
+text-align:right;
+border-bottom:1px solid #ddd;
+}
 
-    .hero h2 {
-      font-size: 1.5rem;
-      color: #2563eb;
-      margin-bottom: 2rem;
-    }
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
 
-    .button {
-      background-color: #2563eb;
-      color: white;
-      padding: 0.7rem 1.5rem;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
+nav a:hover{
+color:#2563eb;
+}
 
-    .button:hover {
-      background-color: #1e40af;
-    }
+/* HERO SECTION */
 
-    section {
-      background-color: #fff;
-      border-radius: 8px;
-      max-width: 900px;
-      margin: 2rem auto;
-    }
+.hero{
+max-width:900px;
+margin:auto;
+background-color:#fff;
+padding:2rem;
+border-radius:8px;
+}
 
-    section h3 {
-      font-size: 1.5rem;
-    }
+.hero h1{
+font-size:3rem;
+margin-bottom:0.5rem;
+}
 
-    .projects {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
+.hero h2{
+font-size:1.5rem;
+color:#2563eb;
+margin-bottom:2rem;
+}
 
-    .project-card {
-      background-color: #f1f5f9;
-      padding: 1rem;
-      border-radius: 8px;
-    
-    }
+/* BUTTON */
 
-    .contact input {
-      padding: 0.6rem;
-      width: 45%;
-      margin-right: 10px;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+.button{
+background-color:#2563eb;
+color:white;
+padding:0.7rem 1.5rem;
+border:none;
+border-radius:5px;
+font-size:1rem;
+cursor:pointer;
+}
 
-    .contact .button {
-      width: 100%;
-    }
+.button:hover{
+background-color:#1e40af;
+}
 
-  </style>
+/* SECTIONS */
+
+section{
+background-color:#fff;
+border-radius:8px;
+max-width:900px;
+margin:2rem auto;
+padding:1.5rem;
+}
+
+section h3{
+font-size:1.5rem;
+margin-bottom:1rem;
+}
+
+/* PROJECTS */
+
+.projects{
+display:flex;
+gap:1rem;
+flex-wrap:wrap;
+}
+
+.project-card{
+background-color:#f1f5f9;
+padding:1rem;
+border-radius:8px;
+width:250px;
+transition:0.2s;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+
+.contact input{
+padding:0.6rem;
+width:45%;
+margin-right:10px;
+margin-bottom:1rem;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.contact .button{
+width:100%;
+}
+
+</style>
 </head>
+
+
 <body>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#resume">Resume</a>
-    <a href="#contact">Contact</a>
-  </nav>
 
-  <div class="hero">
-    <h1>Hello, I'm Shilpa</h1>
-    <h2>I'm a Frontend Developer.</h2>
-    <button class="button">View Projects</button>
-  </div>
+<!-- NAVBAR -->
 
-  <section id="about">
-    <h3>About</h3>
-    <p>I'm a frontend developer with experience in building responsive and user-friendly web applications. I specialize in JavaScript, React, HTML, and CSS.</p>
-  </section>
+<nav>
 
-  <section id="projects">
-    <h3>Projects</h3>
-    <div class="projects">
-      <div class="project-card">
-        <h4>Project One</h4>
-        <p>A brief description of the project.</p>
-      </div>
-      <div class="project-card">
-        <h4>Project Two</h4>
-        <p>A brief description of the project.</p>
-      </div>
-      <div class="project-card">
-        <h4>Project Three</h4>
-        <p>A brief description of the project.</p>
-      </div>
-    </div>
-  </section>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#resume">Resume</a>
+<a href="#contact">Contact</a>
 
-  <section id="resume">
-    <h3>Resume</h3>
-    <button class="button">Download Resume</button>
-  </section>
+</nav>
 
-  <section id="contact" class="contact">
-    <h3>Contact</h3>
-    <form>
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required /><br />
-      <button class="button" type="submit">Send Message</button>
-    </form>
-  </section>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<h1>Hello, I'm Shilpa</h1>
+<h2>Frontend Developer</h2>
+
+<button class="button" onclick="location.href='#projects'">
+View Projects
+</button>
+
+</div>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h3>About</h3>
+
+<p>
+I'm a frontend developer with experience in building responsive and
+user-friendly web interfaces. I enjoy creating clean UI layouts
+using HTML, CSS, JavaScript, and React.
+</p>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h3>Projects</h3>
+
+<div class="projects">
+
+<div class="project-card">
+<h4>Mondrian Layout</h4>
+<p>
+Recreated a Piet Mondrian artwork layout using HTML and CSS Grid.
+</p>
+</div>
+
+<div class="project-card">
+<h4>Ecommerce Landing Page</h4>
+<p>
+Simple ecommerce UI built with product cards, filters and responsive layout.
+</p>
+</div>
+
+<div class="project-card">
+<h4>Resume Website</h4>
+<p>
+Personal portfolio website displaying skills, projects and contact details.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- RESUME -->
+
+<section id="resume">
+
+<h3>Resume</h3>
+
+<p>You can download my resume here:</p>
+
+<button class="button">
+Download Resume
+</button>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h3>Contact</h3>
+
+<form>
+
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+
+<br>
+
+<button class="button" type="submit">
+Send Message
+</button>
+
+</form>
+
+</section>
+
 
 </body>
 </html>
